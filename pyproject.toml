@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alinathans-featplat_jd419"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出特征平台工程师·灰度发布与版本回滚上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "alinathans" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://alinathans.github.io"
+Repository = "https://github.com/alinathans/featplat_jd419"
+Issues = "https://github.com/alinathans/featplat_jd419/issues"
+
+[project.scripts]
+featplat_jd419 = "featplat_jd419:main"
+
+[tool.setuptools]
+py-modules = ["featplat_jd419"]
